@@ -1,7 +1,8 @@
 Soteria QT Wallet Bootstrap Scripts
 
 These scripts help you bootstrap the Soteria QT wallet quickly — no need to resync the entire blockchain manually.
-🖥️ Supported Platforms
+
+Supported Platforms
 
     Windows
 
@@ -9,7 +10,7 @@ These scripts help you bootstrap the Soteria QT wallet quickly — no need to re
 
     Linux
 
-🍎 macOS Instructions
+macOS Instructions
 
 You have two options:
 1. Terminal (CLI)
