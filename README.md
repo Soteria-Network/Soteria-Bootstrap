@@ -13,16 +13,19 @@ Supported Platforms
 macOS Instructions
 
 You have two options:
+
 1. Terminal (CLI)
 
 Use Soteria-Bootstrap-macOS.sh:
 
 chmod +x soteria-bootstrap-macos.sh
+
 ./soteria-bootstrap-macos.sh
 
 2. Double-click (GUI)
 
 Use BootstrapMacOS.command — just double-click to run.
+
 ⚠️ Important Notes
 
     These scripts assume your wallet is installed in the default data directory.
