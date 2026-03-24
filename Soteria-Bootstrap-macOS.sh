@@ -27,21 +27,21 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Downloading bootstrap archive..."
-curl -LJO https://github.com/Soteria-Network/Soteria-Bootstrap/archive/refs/tags/10-01-2026.zip
+curl -LJO https://github.com/Soteria-Network/Soteria/releases/download/v1.1.0/bootstrap-20260321.zip
 if [ $? -ne 0 ]; then
     echo "ERROR: Failed to download bootstrap file."
     exit 1
 fi
 
 echo "Extracting bootstrap archive..."
-unzip Soteria-Bootstrap-10-01-2026.zip
+unzip bootstrap-20260321.zip
 if [ $? -ne 0 ]; then
     echo "ERROR: Failed to unzip bootstrap archive."
     exit 1
 fi
 
 echo "Copying bootstrap files..."
-cd "Soteria-Bootstrap-10-01-2026" || {
+cd "bootstrap-20260321" || {
     echo "ERROR: Failed to enter bootstrap folder."
     exit 1
 }
@@ -57,10 +57,10 @@ cd "$HOME/Library/Application Support/Soteria" || {
     exit 1
 }
 
-echo "Extracting bootstrap.zip..."
-unzip -o bootstrap.zip
+echo "Extracting bootstrap..."
+unzip -o bootstrap-20260321.zip
 if [ $? -ne 0 ]; then
-    echo "ERROR: Failed to extract bootstrap.zip."
+    echo "ERROR: Failed to extract bootstrap."
     exit 1
 fi
 
