@@ -39,7 +39,7 @@ if errorlevel 1 (
 timeout /t 1 /nobreak > NUL
 
 echo Downloading Bootstrap...
-curl -LJO https://github.com/Soteria-Network/Soteria-Bootstrap/archive/refs/tags/10-01-2026.zip
+curl -LJO https://github.com/Soteria-Network/Soteria/releases/download/v1.1.0/bootstrap-20260321.zip
 if errorlevel 1 (
     echo ERROR: Failed to download bootstrap file.
     pause
@@ -47,7 +47,7 @@ if errorlevel 1 (
 )
 
 echo Extracting Bootstrap...
-unzip "Soteria-Bootstrap-10-01-2026.zip"
+unzip "bootstrap-20260321.zip"
 if errorlevel 1 (
     echo ERROR: Failed to unzip bootstrap archive.
     pause
@@ -57,7 +57,7 @@ if errorlevel 1 (
 timeout /t 1 /nobreak > NUL
 
 echo Copying Bootstrap files...
-cd "Soteria-Bootstrap-10-01-2026"
+cd "bootstrap-20260321"
 if errorlevel 1 (
     echo ERROR: Failed to enter bootstrap folder.
     pause
@@ -78,10 +78,10 @@ if errorlevel 1 (
     exit /b
 )
 
-echo Extracting bootstrap.zip...
-unzip -o bootstrap.zip
+echo Extracting bootstrap-20260321.zip...
+unzip -o bootstrap-20260321.zip
 if errorlevel 1 (
-    echo ERROR: Failed to extract bootstrap.zip.
+    echo ERROR: Failed to extract bootstrap-20260321.zip.
     pause
     exit /b
 )
